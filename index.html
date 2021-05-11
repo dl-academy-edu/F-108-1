@@ -17,7 +17,7 @@
             </ul>
         </nav>
         <a href="#">8 9324324</a>
-        <a href="#">Contact Us</a>
+        <a href="contact.html">Contact Us</a>
     </header>
     <main>
         <section class="banner">
@@ -120,5 +120,79 @@
             </li>
         </ul>
     </footer>
+
+    <div class="modal-popup">
+        <h2>Modal Window</h2>
+        <form action="" method="POST">
+            <fieldset>
+                <label for="field-name">Name</label>
+                <input id="field-name" type="text">
+
+                <label for="field-phone">Phone</label>
+                <input id="field-phone" type="number">
+
+            </fieldset>
+
+            <fieldset>
+                <label><span>Email</span>
+                    <input type="email">
+                </label>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>
+                    Payment Method
+                </legend>
+
+                <ul>
+                    <li>
+                        <input id="check-cash" type="checkbox" name="cash" checked>
+                        <label for="check-cash">Cash</label>
+                    </li>
+                    <li>
+                        <input id="check-onlain" type="checkbox" name="online" disabled>
+                        <label for="check-onlain">Online</label>
+                    </li>
+                    <li>
+                        <label for="check-test">
+                            <input id="check-test" type="checkbox" name="test">
+                            <span>Cashffdgdfg</span>
+                        </label>
+                        
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>Delivery</legend>
+                <ul>
+                    <li>
+                        <input type="radio" id="radio-home" name="delivery" disabled>
+                        <label for="radio-home">At Home</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="radio-work" name="delivery">
+                        <label for="radio-work">At Work</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="radio-del" name="delivery">
+                        <label for="radio-del">Delivery</label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <label for="field-phone">Phone</label>
+                <input id="field-phone" type="date">
+
+                <input type="range">
+
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </fieldset>
+
+            <button type="submit">Send</button>
+        </form>
+    </div>
 </body>
 </html>
