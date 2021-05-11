@@ -1,0 +1,48 @@
+body {
+    font-family: 'Lato', "Arial", sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    color: #000;
+}
+
+.button {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+    color:#fff;
+    text-decoration: none;
+    width: 181px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    background: #008752;
+}
+.button:hover {
+    background: #26CD8B;
+}
+.button:active {
+    background: #005232;
+}
+
+.button-secondary {
+    background: #95459A;
+}
+
+.banner .button {
+    width: 360px;
+    font-size: 25px;
+}
+
+.dots-none li {
+    list-style-type: none;
+}
+
+.header-item > a {
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 20px;
+    color: #333333;
+    text-decoration: none;
+}

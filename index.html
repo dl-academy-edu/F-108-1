@@ -3,32 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Main page</title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header class="header">
-        <img src="images/logo.svg" alt="logo">
-        <nav>
-            <ul>
-                <li><a href="#">Catalog</a></li>
-                <li><a href="#">Catalog</a></li>
-                <li><a href="#">Catalog</a></li>
-                <li><a href="#">Cataloggf</a></li>
-            </ul>
-        </nav>
-        <a href="#">8 9324324</a>
-        <a href="contact.html">Contact Us</a>
+			<img src="images/logo.svg" alt="logo">
+			<nav class="menu">
+				<ul class="dots-none header-list">
+					<li class="header-item"><a href="#">Catalog</a></li>
+					<li class="header-item"><a href="#">Catalog</a></li>
+					<li class="header-item"><a href="#">Catalog</a></li>
+					<li class="header-item"><a href="#">Cataloggf</a></li>
+				</ul>
+			</nav>
+			<a href="#" class="link">8 9324324</a>
+			<a href="contact.html" class="button">Contact Us</a>
     </header>
     <main>
         <section class="banner">
             <img src="images/bg.jpg" alt="">
-            <h1>The world’s leading cleaning company</h1>
-            <button>Get a Free Estimate</button>
+            <h1 class="banner-title">The world’s leading cleaning company</h1>
+						<div class="test"><button class="button button-secondary">Get a Free Estimate</button></div>
+            
         </section>
 
         <section class="service">
-            <h2>OUR MOST POPULAR SERVICES</h2>
-            <ul>
+            <h2 class="service-title">OUR MOST POPULAR SERVICES</h2>
+            <ul class="dots-none">
                 <li>
                     <img src="images/services/service1.jpg" alt="" width="280" height="165">
                     <a href="">Carpet Cleaning</a>
@@ -64,7 +70,7 @@
 
         <section class="brand">
             <h2>Brands</h2>
-            <ul>
+            <ul class="dots-none">
                 <li><img src="images/brands/brand1.png" alt="" width="90" height="90"></li>
                 <li><img src="images/brands/brand2.png" alt="" width="90" height="90"></li>
                 <li><img src="images/brands/brand3.png" alt="" width="90" height="90"></li>
@@ -80,13 +86,13 @@
         <h3>Chem-Dry</h3>
         <p>9420 Cedar CT, Thornton, CO 80229</p>
         <a href="#">987435 </a>
-        <a href="#" class="button">Learn more</a>
+        <a href="#" class="button button-secondary">Learn more</a>
         <img src="images/map.jpg" alt="">
     </article>
 
     <footer class="footer">
         <div class="footer-title">Subscribe to our social networks</div>
-        <ul class="social">
+        <ul class="social dots-none">
             <li>
                 <a href="">
                     <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,0 +1,20 @@
+/* BANNER */
+.banner-title {
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 100%;
+    color: #00559D;
+    width: 60%;
+}
+
+
+/* SERVICE */
+.service-title {
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: #00559D;
+    text-align: center;
+}
+
