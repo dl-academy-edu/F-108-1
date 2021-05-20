@@ -2,48 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Main page</title>
+    <title>Contacts</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contact.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header class="header">
-        <a href="index.html">
-            <img src="images/logo.svg" alt="logo">
-        </a>
-        <nav>
-            <ul>
-                <li><a href="#">Catalog</a></li>
-                <li><a href="#">Catalog</a></li>
-                <li><a href="#">Catalog</a></li>
-                <li><a href="#">Cataloggf</a></li>
+    <header class="header container">
+        <img src="images/logo.svg" alt="logo">
+        <nav class="menu">
+            <ul class="dots-none header-list">
+                <li class="header-item"><a href="#">Catalog</a></li>
+                <li class="header-item"><a href="#">Catalog</a></li>
+                <li class="header-item"><a href="#">Catalog</a></li>
+                <li class="header-item"><a href="#">Cataloggf</a></li>
             </ul>
         </nav>
-        <a href="#">8 9324324</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="#" class="header-phone">8 9324324</a>
+        <a href="contact.html" class="button">Contact Us</a>
+			
     </header>
 
-    <main>
+    <main class="container">
         <section>
-            <h1>Contact Us</h1>
+            <h1 class="contact-title">Contact Us</h1>
 
-            <form action="" method="POST">
-                <fieldset>
-                    <label for="field-name">Name</label>
-                    <input id="field-name" type="text">
+            <form action="" method="POST" class="contact-form">
 
-                    <label for="field-phone">Phone</label>
-                    <input id="field-phone" type="number">
-
+                <fieldset class="form-2-column">
+                    <div class="label-wrapper">
+                        <label for="field-name" class="form-label">Name</label>
+                        <input id="field-name" class="form-input" type="text" placeholder="Ivan Ivanov">
+                        
+                    </div>
+                    
+                    <div class="label-wrapper">
+                        <label for="field-phone" class="form-label">Phone</label>
+                        <input id="field-phone" type="number">
+                        
+                    </div>
                 </fieldset>
 
-                <fieldset>
-                    <label><span>Email</span>
+                <fieldset class="label-wrapper">
+                    <label for="field-email" class="form-label">Email</label>
+                    <input id="field-email" type="email">
+                    
+
+                    <!-- <label class="form-label">
+                        <span>Email</span>
                         <input type="email">
-                    </label>
+                    </label> -->
                     
                 </fieldset>
 
@@ -52,19 +63,19 @@
                         Payment Method
                     </legend>
 
-                    <ul>
+                    <ul class="dots-none form-list">
                         <li>
-                            <input id="check-cash" type="checkbox" name="cash" checked>
-                            <label for="check-cash">Cash</label>
+                            <input id="check-cash" class="form-checkbox-input" type="checkbox" name="cash" checked>
+                            <label for="check-cash" class="form-checkbox-label" tabindex="1">Cash</label>
                         </li>
                         <li>
-                            <input id="check-onlain" type="checkbox" name="online" disabled>
-                            <label for="check-onlain">Online</label>
+                            <input id="check-onlain" class="form-checkbox-input" type="checkbox" name="online">
+                            <label for="check-onlain" class="form-checkbox-label" tabindex="1">Online</label>
                         </li>
                         <li>
                             <label for="check-test">
-                                <input id="check-test" type="checkbox" name="test">
-                                <span>Cashffdgdfg</span>
+                                <input id="check-test" class="form-checkbox-input" type="checkbox" name="test">
+                                <span class="form-checkbox-label" tabindex="1">Cashffdgdfg</span>
                             </label>
                             
                         </li>
@@ -73,80 +84,87 @@
 
                 <fieldset>
                     <legend>Delivery</legend>
-                    <ul>
+                    <ul class="dots-none form-list">
                         <li>
-                            <input type="radio" id="radio-home" name="delivery" disabled>
-                            <label for="radio-home">At Home</label>
+                            <input type="radio" id="radio-home" class="form-radio-input" name="delivery">
+                            <label for="radio-home" class="form-radio-label" tabindex="1">At Home</label>
                         </li>
                         <li>
-                            <input type="radio" id="radio-work" name="delivery" checked>
-                            <label for="radio-work">At Work</label>
+                            <input type="radio" id="radio-work" name="delivery" class="form-radio-input" checked>
+                            <label for="radio-work" class="form-radio-label" tabindex="1">At Work</label>
                         </li>
                         <li>
-                            <input type="radio" id="radio-del" name="delivery">
-                            <label for="radio-del">Delivery</label>
+                            <input type="radio" id="radio-del" class="form-radio-input"  name="delivery">
+                            <label for="radio-del" class="form-radio-label" tabindex="1">Delivery</label>
                         </li>
                     </ul>
                 </fieldset>
 
-                <fieldset>
-                    <label for="field-phone">Phone</label>
-                    <input id="field-phone" type="date">
-
-                    <input type="range">
-
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                <fieldset class="label-wrapper">
+                    <label class="form-label">Message</label>
+                    <textarea cols="30" rows="10">
+                        Message
+                    </textarea>
+                    
                 </fieldset>
 
-                <button type="submit">Send</button>
+                <button type="submit" class="button">Send</button>
             </form>
 
         </section>
     </main>
 
     <article class="map">
-        <h3>Chem-Dry</h3>
-        <p>9420 Cedar CT, Thornton, CO 80229</p>
-        <a href="#">987435 </a>
-        <a href="#" class="button">Learn more</a>
-        <img src="images/map.jpg" alt="">
+        <div class="container">
+            <div class="map-wrapper">
+                <h3 class="map-title">Chem-Dry</h3>
+                <p>9420 Cedar CT, Thornton, CO 80229</p>
+                <a href="#" class="map-phone">987435 </a>
+                <a href="#" class="button button-secondary">Learn more</a>
+            </div>
+        </div>
+        
+        <iframe class="map-frame" src="https://yandex.ru/map-widget/v1/?um=constructor%3A3cdfcf7b12b7d55deeb99c7df7040d6d3e3c0229235572af722d581c47906e43&amp;source=constructor" width="100%" height="585" frameborder="0"></iframe>
     </article>
 
-<footer class="footer">
-    <div class="footer-title">Subscribe to our social networks</div>
-    <ul class="social">
-        <li>
-            <a href="">
-                <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M37.2118 20.1067V15.2733H32.7059C28.9836 15.2733 26.4368 18.3667 26.4368 22.2333V24.94H21.735V29.3867H26.4368V42.92H31.7263V29.3867H37.2118V24.94H31.7263V21.8467C31.7263 20.88 32.3141 20.3 32.9018 20.3H37.2118V20.1067ZM30.1591 0C46.4195 0 59.5454 12.9533 59.5454 29C59.5454 45.0467 46.4195 58 30.1591 58C13.8986 58 0.772705 45.0467 0.772705 29C0.772705 12.9533 13.8986 0 30.1591 0Z" fill="white"/>
-                </svg>                    
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M37.2118 20.1067V15.2733H32.7059C28.9836 15.2733 26.4368 18.3667 26.4368 22.2333V24.94H21.735V29.3867H26.4368V42.92H31.7263V29.3867H37.2118V24.94H31.7263V21.8467C31.7263 20.88 32.3141 20.3 32.9018 20.3H37.2118V20.1067ZM30.1591 0C46.4195 0 59.5454 12.9533 59.5454 29C59.5454 45.0467 46.4195 58 30.1591 58C13.8986 58 0.772705 45.0467 0.772705 29C0.772705 12.9533 13.8986 0 30.1591 0Z" fill="white"/>
-                    </svg>
-                    
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M37.2118 20.1067V15.2733H32.7059C28.9836 15.2733 26.4368 18.3667 26.4368 22.2333V24.94H21.735V29.3867H26.4368V42.92H31.7263V29.3867H37.2118V24.94H31.7263V21.8467C31.7263 20.88 32.3141 20.3 32.9018 20.3H37.2118V20.1067ZM30.1591 0C46.4195 0 59.5454 12.9533 59.5454 29C59.5454 45.0467 46.4195 58 30.1591 58C13.8986 58 0.772705 45.0467 0.772705 29C0.772705 12.9533 13.8986 0 30.1591 0Z" fill="white"/>
-                    </svg>
-                    
-            </a>
-        </li>
-        <li>
-            <a href="">
-                <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M37.2118 20.1067V15.2733H32.7059C28.9836 15.2733 26.4368 18.3667 26.4368 22.2333V24.94H21.735V29.3867H26.4368V42.92H31.7263V29.3867H37.2118V24.94H31.7263V21.8467C31.7263 20.88 32.3141 20.3 32.9018 20.3H37.2118V20.1067ZM30.1591 0C46.4195 0 59.5454 12.9533 59.5454 29C59.5454 45.0467 46.4195 58 30.1591 58C13.8986 58 0.772705 45.0467 0.772705 29C0.772705 12.9533 13.8986 0 30.1591 0Z" fill="white"/>
-                    </svg>
-                    
-            </a>
-        </li>
-    </ul>
-</footer>
+    <footer class="footer">
+        <div class="container footer-wrapper">
+            <div class="footer-title">Subscribe to our social networks</div>
+            <ul class="social dots-none">
+                <li class="social-item">
+                    <a href="">
+                        <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M37.2118 20.1067V15.2733H32.7059C28.9836 15.2733 26.4368 18.3667 26.4368 22.2333V24.94H21.735V29.3867H26.4368V42.92H31.7263V29.3867H37.2118V24.94H31.7263V21.8467C31.7263 20.88 32.3141 20.3 32.9018 20.3H37.2118V20.1067ZM30.1591 0C46.4195 0 59.5454 12.9533 59.5454 29C59.5454 45.0467 46.4195 58 30.1591 58C13.8986 58 0.772705 45.0467 0.772705 29C0.772705 12.9533 13.8986 0 30.1591 0Z" fill="white"/>
+                        </svg>                    
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="">
+                        <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M37.2118 20.1067V15.2733H32.7059C28.9836 15.2733 26.4368 18.3667 26.4368 22.2333V24.94H21.735V29.3867H26.4368V42.92H31.7263V29.3867H37.2118V24.94H31.7263V21.8467C31.7263 20.88 32.3141 20.3 32.9018 20.3H37.2118V20.1067ZM30.1591 0C46.4195 0 59.5454 12.9533 59.5454 29C59.5454 45.0467 46.4195 58 30.1591 58C13.8986 58 0.772705 45.0467 0.772705 29C0.772705 12.9533 13.8986 0 30.1591 0Z" fill="white"/>
+                            </svg>
+                            
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="">
+                        <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M37.2118 20.1067V15.2733H32.7059C28.9836 15.2733 26.4368 18.3667 26.4368 22.2333V24.94H21.735V29.3867H26.4368V42.92H31.7263V29.3867H37.2118V24.94H31.7263V21.8467C31.7263 20.88 32.3141 20.3 32.9018 20.3H37.2118V20.1067ZM30.1591 0C46.4195 0 59.5454 12.9533 59.5454 29C59.5454 45.0467 46.4195 58 30.1591 58C13.8986 58 0.772705 45.0467 0.772705 29C0.772705 12.9533 13.8986 0 30.1591 0Z" fill="white"/>
+                            </svg>
+                            
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="">
+                        <svg width="60" height="58" viewBox="0 0 60 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M37.2118 20.1067V15.2733H32.7059C28.9836 15.2733 26.4368 18.3667 26.4368 22.2333V24.94H21.735V29.3867H26.4368V42.92H31.7263V29.3867H37.2118V24.94H31.7263V21.8467C31.7263 20.88 32.3141 20.3 32.9018 20.3H37.2118V20.1067ZM30.1591 0C46.4195 0 59.5454 12.9533 59.5454 29C59.5454 45.0467 46.4195 58 30.1591 58C13.8986 58 0.772705 45.0467 0.772705 29C0.772705 12.9533 13.8986 0 30.1591 0Z" fill="white"/>
+                            </svg>
+                            
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    </footer>
 </body>
 </html>

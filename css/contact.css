@@ -1,0 +1,14 @@
+.contact-title {
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 97.2%;
+    text-align: center;
+    color: #00559D;
+}
+
+.contact-form {
+    width: 780px;
+    background: #EEEEEE;
+    margin: 60px auto;
+    padding: 50px 100px;
+}
