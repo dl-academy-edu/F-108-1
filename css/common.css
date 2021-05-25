@@ -32,6 +32,7 @@ img {
     padding: 10px;
     border: none;
     background: #008752;
+    cursor: pointer;
 }
 .button:hover {
     background: #26CD8B;
@@ -43,10 +44,17 @@ img {
 .button-secondary {
     background: #95459A;
 }
+.button-secondary:hover {
+    background: #D665DD;
+}
+.button-secondary:active {
+    background: #722A77;
+}
 
 .banner .button {
     width: 360px;
     font-size: 25px;
+    padding: 16px;
 }
 
 .dots-none {
@@ -150,9 +158,11 @@ img {
 fieldset {
     border: none;
     margin-bottom: 20px;
+    padding: 0;
 }
 
-input {
+input,
+textarea {
     height: 50px;
     border: 2px solid #777;
     padding: 12px 20px;
@@ -181,7 +191,7 @@ textarea:focus + label {
 .label-wrapper {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: auto;
     margin: 0 20px;
 }
 
