@@ -136,8 +136,12 @@
 
 .map-wrapper {
     background: #008752;
-    display: flex;
-    flex-direction: column;
+    -webkit-display: flex;
+        -moz-display: flex;
+            display: flex;
+    -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+                flex-direction: column;
     width: 380px;
     position: absolute;
     top: 40px;
